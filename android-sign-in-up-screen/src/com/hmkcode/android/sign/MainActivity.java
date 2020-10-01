@@ -17,8 +17,8 @@ public class MainActivity extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         
-        btnSignIn = (Button) findViewById(R.id.btnSingIn);
-        btnSignUp = (Button) findViewById(R.id.btnSignUp);
+        btnSignIn =  findViewById(R.id.btnSingIn);
+        btnSignUp =  findViewById(R.id.btnSignUp);
         
         btnSignIn.setOnClickListener(this);
         btnSignUp.setOnClickListener(this);
