@@ -32,10 +32,10 @@ public class MainActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_main);
 	
 		// Get reference to views
-		tvHasCamera = (TextView) findViewById(R.id.tvHasCamera);
-		tvHasCameraApp = (TextView) findViewById(R.id.tvHasCameraApp);
-		btnTackPic = (Button) findViewById(R.id.btnTakePic);
-		ivThumbnailPhoto = (ImageView) findViewById(R.id.ivThumbnailPhoto);
+		tvHasCamera = findViewById(R.id.tvHasCamera);
+		tvHasCameraApp = findViewById(R.id.tvHasCameraApp);
+		btnTackPic = findViewById(R.id.btnTakePic);
+		ivThumbnailPhoto = findViewById(R.id.ivThumbnailPhoto);
 
 		// Does your device have a camera?
 		if(hasCamera()){
