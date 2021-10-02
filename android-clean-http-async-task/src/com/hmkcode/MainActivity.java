@@ -27,9 +27,9 @@ public class MainActivity extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		tvIsConnected = (TextView) findViewById(R.id.tvIsConnected);
-		btnRequest = (Button) findViewById(R.id.btnRequest);
-		etResponse = (EditText) findViewById(R.id.etRespose);
+		tvIsConnected =  findViewById(R.id.tvIsConnected);
+		btnRequest =  findViewById(R.id.btnRequest);
+		etResponse =  findViewById(R.id.etRespose);
 		
 		if(isConnected()){
 			tvIsConnected.setBackgroundColor(0xFF00CC00);
@@ -62,7 +62,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		}.execute();
 	}
 	public boolean isConnected(){
-    	ConnectivityManager connMgr = (ConnectivityManager) getSystemService(Activity.CONNECTIVITY_SERVICE);
+    	ConnectivityManager connMgr = getSystemService(Activity.CONNECTIVITY_SERVICE);
     	    NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
     	    if (networkInfo != null && networkInfo.isConnected()) 
     	    	return true;
