@@ -7,7 +7,6 @@ import com.hmkcode.http.HttpHandler;
 
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.Bundle;
 import android.app.Activity;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -33,10 +32,10 @@ public class MainActivity extends Activity implements OnClickListener {
 		
 		if(isConnected()){
 			tvIsConnected.setBackgroundColor(0xFF00CC00);
-			tvIsConnected.setText("You are conncted");
+			tvIsConnected.setText("You are connected");
         }
 		else{
-			tvIsConnected.setText("You are NOT conncted");
+			tvIsConnected.setText("You are NOT connected");
 		}
 		
 		btnRequest.setOnClickListener(this);
@@ -67,7 +66,7 @@ public class MainActivity extends Activity implements OnClickListener {
     	    if (networkInfo != null && networkInfo.isConnected()) 
     	    	return true;
     	    else
-    	    	return false;	
+    	    	return 0;	
     }
 
 	
